@@ -14,23 +14,21 @@
 
 <body>
     <header>
-        <div class="header-top">
-            <div class="header__logo">
-                <img src="./img/Logo.svg" alt="logo">
-            </div>
+        <div class="header container">
 
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Pages</li>
-                    <li>Contact Us</li>
-                </ul>
-            </nav>
+            <img class="header__logo" src="./img/Logo.svg" alt="logo">
+
+            <ul class="header__nav nav">
+                <li class="nav__item"><a href="!#">Home</a></li>
+                <li class="nav__item"><a href="!#">About Me</a></li>
+                <li class="nav__item"><a href="!#">Pages</a></li>
+                <li class="nav__item"><a href="!#">Contact Us</a></li>
+            </ul>
+
         </div>
 
         <div class="header__top container">
-            <h1 class="header__top-title">Tell your creativity to the world with</h1>
+            <h1 class="header__top-title">Tell your creativity <br> to the world with <span class="header__top-title--marked">UIUXer</span></h1>
             <p class="header__top-text">
                 UIUXer is a creative, minimal, and cleanly designed personal and portfolio Webflow template.
             </p>
@@ -39,8 +37,8 @@
                 <button class="header__top-btn">Buy Template</button>
                 <button class="header__top-btn">Explore Page</button>
             </div>
-
-            <img src="./img/header link.svg" alt="link">
+            
+            <a href="!#"><img src="./img/scrollDown.png" alt="link"></a>
         </div>
 
     </header>
@@ -143,9 +141,76 @@
             </div>
         </section>
 
+        <section class="getStart">
+
+            <div class="getstart__info">
+                <h2 class="getstart__title">
+                    Ready to get start with UIUXer?
+                </h2>
+
+                <p class="getstart__info">
+                    Well-planned layouts with a clear structure that can be utilized to demonstrate your inventiveness
+                    in the digital business field.
+                </p>
+
+                <button class="getstart__btn">
+                    Get Start Now
+                </button>
+            </div>
+
+            <img src="./img/screen.png" alt="getStart">
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer__upside">
+            <img src="./img/getintouch.svg" alt="linksvg">
+        </div>
+
+        <div class="footer__runningline">
+            <p>
+                <img src="./img/svg/hand.svg" alt="Available for Work">
+                Available for Work
+            </p>
+
+            <p>
+                <img src="./img/svg/pc.svg" alt="Get in Touch">
+            </p>
+        </div>
+
+        <div class="footer__links">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li>UX Designer</li>
+                    <li>UI Designer</li>
+                    <li>Protected</li>
+                </ul>
+                <ul class="footer__list">
+                    <li>Style Guide</li>
+                    <li>Licenses</li>
+                    <li>Changelog</li>
+                </ul>
+            </nav>
+
+            <div class="footer__input">
+                <input type="text" name="" value="" placeholder="Interested in working together? Drop me a line">
+                <button>
+                    <img src="" alt="Write Now">
+                    Write Now
+                </button>
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+            <ul class="footer__copyright-list">
+                <li class="footer__copyright-item">Copyright © UIUXer | Designed by</li>
+                <li class="footer__copyright-item">VictorFlow</li>
+                <li class="footer__copyright-item">Templates - Powered by</li>
+                <li class="footer__copyright-item">Webflow</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
