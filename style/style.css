@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
-  font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+header {
+  margin-bottom: 120px;
 }
 
 .container {
@@ -42,14 +45,8 @@ body {
   text-align: center;
   color: #242f65;
 }
-.header__top-title--marked {
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 130%;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #ff774c;
-  font-family: var(--font-family);
+.header__top-scrolldown {
+  margin-bottom: 129px;
 }
 .header__top-text {
   font-weight: 400;
@@ -101,7 +98,7 @@ body {
   padding-left: 29.81px;
 }
 .nav__item {
-  font-family: var(--second-family);
+  font-family: "Fraunces", serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
@@ -111,4 +108,65 @@ body {
 .nav__item > a {
   color: #222;
   text-decoration: none;
+}
+
+.homepage {
+  background: #fff;
+  padding-bottom: 40px;
+}
+.homepage__top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.homepage__title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #242f65;
+  width: 500px;
+}
+.homepage__text {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #525665;
+  width: 803px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.wrapper__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 39px;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  padding-bottom: 70px;
+  border-radius: 20px;
+}
+.wrapper__item:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgb(36, 47, 101);
+}
+.wrapper__item > a {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #242f65;
 }/*# sourceMappingURL=style.css.map */

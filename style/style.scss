@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+$font-family: "Mulish", sans-serif;
+$second-family: "Fraunces", serif;
 
 // body {
 //   font-family: "Mulish", sans-serif;
@@ -12,7 +14,7 @@
 
 //  basse
 body {
-  font-family: "Fraunces", serif;
+  // font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -21,6 +23,10 @@ body {
     "WONK" 0;
 }
 
+// header
+header {
+  margin-bottom: 120px;
+}
 
 .container {
   padding-left: calc(50% - 720px);
@@ -37,7 +43,7 @@ body {
   &__logo {
     padding-right: 566px;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -62,16 +68,10 @@ body {
       text-align: center;
       color: #242f65;
 
+    }
 
-      &--marked {
-        font-weight: 400;
-        font-size: 100px;
-        line-height: 130%;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #ff774c;
-        font-family: var(--font-family);
-      }
+    &-scrolldown {
+      margin-bottom: 129px;
     }
 
     &-text {
@@ -86,7 +86,7 @@ body {
       margin-bottom: 15px;
     }
 
-    &-btns{
+    &-btns {
       display: flex;
       flex-direction: row;
       column-gap: 10px;
@@ -94,6 +94,7 @@ body {
       margin-bottom: 15px;
       margin-bottom: 60px;
     }
+
     &-btn {
       width: 266px;
       height: 69px;
@@ -109,12 +110,12 @@ body {
       width: 259px;
       height: 69px;
       background: #7390f9;
-      transition: all 0.1s linear ;
+      transition: all 0.1s linear;
 
       &:hover {
         background-color: #ff774c;
         border: 1px solid #ff774c;
-        
+
         width: 266px;
         height: 69px;
       }
@@ -132,7 +133,7 @@ body {
   padding-left: 29.81px;
 
   &__item {
-    font-family: var(--second-family);
+    font-family: $second-family;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
@@ -143,6 +144,79 @@ body {
     &>a {
       color: #222;
       text-decoration: none;
+    }
+  }
+
+
+}
+
+// main
+
+.homepage {
+  background: #fff;
+  padding-bottom: 40px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #242f65;
+    width: 500px;
+  }
+
+  &__text {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #525665;
+    width: 803px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 70px;
+  // margin-bottom: 70px;
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 39px;
+    align-items: center;
+    // width: 645px;
+    // height: 958px;
+    transition: box-shadow 0.3s;
+    padding-bottom: 70px;
+    border-radius: 20px;
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 10px 10px 10px rgba(36, 47, 101, 1);
+    }
+
+    &>a {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #242f65;
     }
   }
 }
