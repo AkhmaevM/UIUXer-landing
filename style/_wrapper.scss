@@ -10,7 +10,6 @@
     flex-direction: column;
     row-gap: 10px;
     align-items: center;
-
   }
 
   &__title {
@@ -34,6 +33,7 @@
     color: #525665;
     width: 803px;
   }
+ 
 
   &__box {
     padding-bottom: 40px;
@@ -50,8 +50,6 @@
       flex-direction: column;
       row-gap: 39px;
       align-items: center;
-      width: 645px;
-      height: 958px;
       transition: box-shadow 0.3s;
       margin-bottom: 70px;
       border-radius: 20px;
@@ -71,5 +69,9 @@
         color: #242f65;
       }
     }
+
+   
   }
+
+  
 }
