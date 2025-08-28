@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
   font-optical-sizing: auto;
@@ -229,6 +230,91 @@ body {
   border-radius: 10px;
   background-color: #ff774c;
   border: 1px solid #ff774c;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/footerBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__svg {
+  padding-top: 86px;
+}
+.footer__runningline {
+  padding-top: 1px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.footer__runningline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer__links {
+  padding-top: 122px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.footer__feedback {
+  border-radius: 20px;
+  width: 819px;
+  height: 116px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 30px;
+  background-color: #fff;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.footer__input {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #242f65;
+}
+.footer__input::-moz-placeholder {
+  width: 554px;
+  text-overflow: clip; /* Ограничивает текст, чтобы он не переносился */
+  white-space: nowrap;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #242f65;
+}
+.footer__input::placeholder {
+  width: 554px;
+  text-overflow: clip; /* Ограничивает текст, чтобы он не переносился */
+  white-space: nowrap;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #242f65;
 }
 
 .wrapper {
