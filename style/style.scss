@@ -301,10 +301,15 @@ body {
   }
 
   &__links {
+    width: 100vw;
+    border: 1px solid #d092ba;
+    margin-top: 90px;
+    padding-bottom: 40px;
     padding-top: 122px;
     display: flex;
     flex-direction: row;
-    column-gap: 55px;
+    // column-gap: 55px;
+    justify-content: space-around;
   }
 
   &__nav {
@@ -316,7 +321,24 @@ body {
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 16px;
+    align-items: flex-start;
+
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #242f65;
+
+    & > li {
+      padding-left: 70px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
   }
 
   &__feedback {
@@ -326,12 +348,29 @@ body {
 
     display: flex;
     flex-direction: row;
+
     padding: 40px 30px;
     background-color: #fff;
     column-gap: 8px;
+    align-items: center;
+    &-btn {
+      border: 1px solid #242f65;
+      border-radius: 10px;
+      width: 187px;
+      height: 52px;
+      background: #242f65;
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #fff;
+    }
   }
 
   &__input {
+    width: 554px;
     font-family: $second-family;
     font-weight: 400;
     font-size: 24px;
@@ -339,16 +378,27 @@ body {
     letter-spacing: 0.02em;
     color: #242f65;
 
-    &::placeholder {
-      width: 554px;
-      text-overflow: clip; /* Ограничивает текст, чтобы он не переносился */
-      white-space: nowrap;
+    padding-top: 9px;
+    padding-bottom: 7px;
+  }
 
-      font-family: $second-family;
+  &__copyright {
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-item {
+      font-family: $font-family;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 150%;
       letter-spacing: 0.02em;
+      text-align: center;
       color: #242f65;
     }
   }

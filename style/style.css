@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
   font-optical-sizing: auto;
@@ -258,11 +257,14 @@ body {
        column-gap: 10px;
 }
 .footer__links {
+  width: 100vw;
+  border: 1px solid #d092ba;
+  margin-top: 90px;
+  padding-bottom: 40px;
   padding-top: 122px;
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 55px;
-       column-gap: 55px;
+  justify-content: space-around;
 }
 .footer__nav {
   display: flex;
@@ -273,7 +275,21 @@ body {
 .footer__list {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 16px;
+  align-items: flex-start;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #242f65;
+}
+.footer__list > li {
+  padding-left: 70px;
+}
+.footer__list > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .footer__feedback {
   border-radius: 20px;
@@ -285,35 +301,49 @@ body {
   background-color: #fff;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  align-items: center;
+}
+.footer__feedback-btn {
+  border: 1px solid #242f65;
+  border-radius: 10px;
+  width: 187px;
+  height: 52px;
+  background: #242f65;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
 }
 .footer__input {
+  width: 554px;
   font-family: "Fraunces", serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #242f65;
+  padding-top: 9px;
+  padding-bottom: 7px;
 }
-.footer__input::-moz-placeholder {
-  width: 554px;
-  text-overflow: clip; /* Ограничивает текст, чтобы он не переносился */
-  white-space: nowrap;
-  font-family: "Fraunces", serif;
+.footer__copyright {
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer__copyright-list {
+  display: flex;
+  flex-direction: row;
+}
+.footer__copyright-item {
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: #242f65;
-}
-.footer__input::placeholder {
-  width: 554px;
-  text-overflow: clip; /* Ограничивает текст, чтобы он не переносился */
-  white-space: nowrap;
-  font-family: "Fraunces", serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
+  text-align: center;
   color: #242f65;
 }
 
