@@ -1,9 +1,15 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "SOFT" 0, "WONK" 0;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -105,6 +111,9 @@ body {
   color: #222;
   text-decoration: none;
 }
+.nav__item > a:hover {
+  text-decoration: underline;
+}
 
 .homepage {
   background: #fff;
@@ -184,7 +193,7 @@ body {
 }
 
 .getStart {
-  margin: 100px 60px;
+  padding: 100px 60px;
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,6 +238,13 @@ body {
   border-radius: 10px;
   background-color: #ff774c;
   border: 1px solid #ff774c;
+  transition: all 0.1s linear;
+  margin-top: 5px;
+}
+.getStart__btn:hover {
+  background-color: #242f65;
+  width: 280px;
+  height: 75px;
 }
 
 .footer {
@@ -242,19 +258,32 @@ body {
 .footer__svg {
   padding-top: 86px;
 }
+.footer__runningline--wrapper {
+  overflow: hidden; /* Скрывает выходящие за пределы элементы */
+  width: 100vw; /* Ширина контейнера, в котором будет бегущая строка */
+  white-space: nowrap; /* Предотвращает перенос элементов на новую строку */
+}
 .footer__runningline {
   padding-top: 1px;
   display: flex;
   flex-direction: row;
   -moz-column-gap: 70px;
        column-gap: 70px;
+  animation: marquee 60s linear infinite; /* Название анимации, длительность, тип, повторение */
 }
 .footer__runningline-item {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #242f65;
   display: flex;
   flex-direction: row;
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  margin-right: 70px; /* Отступ между элементами */
 }
 .footer__links {
   width: 100vw;
@@ -316,6 +345,22 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer__feedback-btn--icon {
+  fill: #ff774c;
+}
+.footer__feedback-btn:hover {
+  background-color: #ff774c;
+  border: 1px solid #ff774c;
+}
+.footer__feedback-btn:hover > .footer__feedback-btn--icon {
+  fill: #242f65;
 }
 .footer__input {
   width: 554px;
@@ -413,4 +458,16 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #242f65;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Начальное положение: справа за пределами */
+  }
+  50% {
+    transform: translate(50%);
+  }
+  100% {
+    transform: translateX(-100%); /* Конечное положение: слева за пределами */
+  }
 }/*# sourceMappingURL=style.css.map */

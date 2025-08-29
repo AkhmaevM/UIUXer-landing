@@ -12,12 +12,17 @@
 // }
 
 //  basse
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   // font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "SOFT" 0, "WONK" 0;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -131,6 +136,10 @@ body {
     & > a {
       color: #222;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -221,7 +230,7 @@ body {
 }
 
 .getStart {
-  margin: 100px 60px;
+  padding: 100px 60px;
 
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
@@ -270,6 +279,14 @@ body {
     border-radius: 10px;
     background-color: #ff774c;
     border: 1px solid #ff774c;
+    transition: all 0.1s linear;
+    margin-top: 5px;
+
+    &:hover {
+      background-color: #242f65;
+      width: 280px;
+      height: 75px;
+    }
   }
 }
 
@@ -286,17 +303,36 @@ body {
     padding-top: 86px;
   }
 
+  &__runningline--wrapper {
+    overflow: hidden; /* Скрывает выходящие за пределы элементы */
+    width: 100vw; /* Ширина контейнера, в котором будет бегущая строка */
+    white-space: nowrap; /* Предотвращает перенос элементов на новую строку */
+  }
+
   &__runningline {
     padding-top: 1px;
     display: flex;
     flex-direction: row;
     column-gap: 70px;
 
+    // display: inline-block; /* Позволяет применять transform */
+    animation: marquee 60s linear infinite; /* Название анимации, длительность, тип, повторение */
+
     &-item {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: #242f65;
+
       display: flex;
       flex-direction: row;
       align-items: center;
       column-gap: 10px;
+
+      margin-right: 70px; /* Отступ между элементами */
+      // display: inline-block; /* Элементы отображаются в одну строку */
     }
   }
 
@@ -353,6 +389,7 @@ body {
     background-color: #fff;
     column-gap: 8px;
     align-items: center;
+
     &-btn {
       border: 1px solid #242f65;
       border-radius: 10px;
@@ -366,6 +403,28 @@ body {
       letter-spacing: 0.02em;
       text-align: center;
       color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+
+      &--icon {
+        fill: #ff774c;
+      }
+
+      &:hover {
+        background-color: #ff774c;
+        border: 1px solid #ff774c;
+      }
+
+      &:hover > &--icon {
+        fill: #242f65;
+      }
+
+      // &:hover > &--icon {
+      //   fill: #242f65;
+      // }
     }
   }
 
@@ -405,3 +464,18 @@ body {
 }
 
 @import "wrapper";
+
+// running line css animation
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Начальное положение: справа за пределами */
+  }
+
+  50% {
+    transform: translate(50%);
+  }
+  100% {
+    transform: translateX(-100%); /* Конечное положение: слева за пределами */
+  }
+}

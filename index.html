@@ -18,7 +18,7 @@
 
                 <img class="header__logo" src="./img/svg/Logo.svg" alt="logo">
 
-                <ul class="header__nav nav">
+                <ul class="header__nav nav" id="nav">
                     <li class="nav__item"><a href="#">Home</a></li>
                     <li class="nav__item"><a href="#">About Me</a></li>
                     <li class="nav__item"><a href="#">Pages</a></li>
@@ -42,7 +42,7 @@
                     <button class="header__top-btn">Explore Page</button>
                 </div>
 
-                <a href="#" class="header__top-scrolldown"><img
+                <a href=#portfolio class="header__top-scrolldown"><img
                         src="./img/scrollDown.png" alt="link"></a>
             </div>
 
@@ -50,7 +50,7 @@
 
         <main>
 
-            <section class="homepage container wrapper">
+            <section class="homepage container wrapper" id="portfolio">
                 <div class="wrapper__top">
                     <h2 class="wrapper__title">
                         Professional Home Pages
@@ -206,34 +206,89 @@
 
         <footer class="footer">
 
-            <img src="./img/svg/getintouch.svg" alt="linksvg"
+            <a href=#nav>
+                <img src="./img/svg/getintouch.svg" alt="linksvg"
                 class="footer__svg">
+            </a>
 
-            <div class="footer__runningline">
-                <div class="footer__runningline-item">
-                    <img src="./img/svg/hand.svg"
-                        class="footer__runningline-img"
-                        alt="Available for Work">
-                    <p class="footer__runningline-text">Available for Work</p>
-                </div>
+            <div class="footer__runningline--wrapper">
+                <div class="footer__runningline">
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/hand.svg"
+                            class="footer__runningline-img"
+                            alt="Available for Work">
+                        <p class="footer__runningline-text">Available for
+                            Work</p>
+                    </div>
 
-                <div class="footer__runningline-item">
-                    <img src="./img/svg/pc.svg" class="footer__runningline-img"
-                        alt="Get in Touch">
-                    <p class="footer__runningline-text">Get in Touch</p>
-                </div>
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/pc.svg"
+                            class="footer__runningline-img"
+                            alt="Get in Touch">
+                        <p class="footer__runningline-text">Get in Touch</p>
+                    </div>
 
-                <div class="footer__runningline-item">
-                    <img src="./img/svg/hand.svg"
-                        class="footer__runningline-img"
-                        alt="Available for Work">
-                    <p class="footer__runningline-text">Available for Work</p>
-                </div>
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/hand.svg"
+                            class="footer__runningline-img"
+                            alt="Available for Work">
+                        <p class="footer__runningline-text">Available for
+                            Work</p>
+                    </div>
 
-                <div class="footer__runningline-item">
-                    <img src="./img/svg/pc.svg" class="footer__runningline-img"
-                        alt="Get in Touch">
-                    <p class="footer__runningline-text">Get in Touch</p>
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/pc.svg"
+                            class="footer__runningline-img"
+                            alt="Get in Touch">
+                        <p class="footer__runningline-text">Get in Touch</p>
+                    </div>
+
+                     <div class="footer__runningline-item">
+                        <img src="./img/svg/hand.svg"
+                            class="footer__runningline-img"
+                            alt="Available for Work">
+                        <p class="footer__runningline-text">Available for
+                            Work</p>
+                    </div>
+
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/pc.svg"
+                            class="footer__runningline-img"
+                            alt="Get in Touch">
+                        <p class="footer__runningline-text">Get in Touch</p>
+                    </div>
+
+                     <div class="footer__runningline-item">
+                        <img src="./img/svg/hand.svg"
+                            class="footer__runningline-img"
+                            alt="Available for Work">
+                        <p class="footer__runningline-text">Available for
+                            Work</p>
+                    </div>
+
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/pc.svg"
+                            class="footer__runningline-img"
+                            alt="Get in Touch">
+                        <p class="footer__runningline-text">Get in Touch</p>
+                    </div>
+
+                     <div class="footer__runningline-item">
+                        <img src="./img/svg/hand.svg"
+                            class="footer__runningline-img"
+                            alt="Available for Work">
+                        <p class="footer__runningline-text">Available for
+                            Work</p>
+                    </div>
+
+                    <div class="footer__runningline-item">
+                        <img src="./img/svg/pc.svg"
+                            class="footer__runningline-img"
+                            alt="Get in Touch">
+                        <p class="footer__runningline-text">Get in Touch</p>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -255,7 +310,24 @@
                     <input type="text" name value class="footer__input"
                         placeholder="Interested in working together? Drop me a line">
                     <button class="footer__feedback-btn">
-                        <img src="./img/svg/pen.svg" alt="Write Now">
+                        <!-- <img src="./img/svg/pen.svg" alt="Write Now"> -->
+                        <svg class="footer__feedback-btn--icon" width="26"
+                            height="26" viewBox="0 0 26 26"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_221)">
+                                <path
+                                    d="M24.9497 0.307634C24.8641 0.213557 24.7603 0.137815 24.6445 0.0849871C24.5288 0.0321588 24.4036 0.00334052 24.2764 0.000273567C24.1493 -0.00279339 24.0228 0.0199546 23.9047 0.0671433C23.7865 0.114332 23.6792 0.184981 23.5891 0.274822L22.8643 0.996111C22.7765 1.08401 22.7271 1.20319 22.7271 1.32746C22.7271 1.45173 22.7765 1.57091 22.8643 1.65881L23.5288 2.32209C23.5723 2.36585 23.6241 2.40057 23.6811 2.42426C23.7381 2.44796 23.7993 2.46015 23.861 2.46015C23.9227 2.46015 23.9839 2.44796 24.0409 2.42426C24.0979 2.40057 24.1497 2.36585 24.1932 2.32209L24.8999 1.61896C25.2573 1.26213 25.2907 0.680876 24.9497 0.307634ZM21.3989 2.46095L10.8216 13.0195C10.7574 13.0834 10.7108 13.1627 10.6862 13.2498L10.1969 14.707C10.1852 14.7466 10.1844 14.7886 10.1945 14.8285C10.2047 14.8685 10.2254 14.905 10.2546 14.9342C10.2838 14.9633 10.3203 14.9841 10.3602 14.9942C10.4002 15.0044 10.4422 15.0035 10.4817 14.9918L11.9378 14.5026C12.0249 14.4779 12.1042 14.4313 12.168 14.3672L22.7266 3.78869C22.8243 3.68996 22.8791 3.55668 22.8791 3.41779C22.8791 3.2789 22.8243 3.14562 22.7266 3.04689L22.1436 2.46095C22.0448 2.36238 21.9109 2.30702 21.7713 2.30702C21.6317 2.30702 21.4978 2.36238 21.3989 2.46095Z" />
+                                <path
+                                    d="M3.5 3.6875H16.543L8.91016 11.3066H8.90918C8.55716 11.6586 8.29609 12.0911 8.14844 12.5664L7.61035 14.1748L7.60645 14.1865L7.60352 14.1982C7.47095 14.6679 7.46573 15.1646 7.58887 15.6367C7.71203 16.1088 7.95866 16.5397 8.30371 16.8848C8.64872 17.2298 9.07965 17.4764 9.55176 17.5996C10.0241 17.7229 10.5215 17.7186 10.9912 17.5859L11.002 17.582L11.0137 17.5781L12.6318 17.0361C13.1035 16.8875 13.5324 16.6276 13.8818 16.2773L21.5 8.64453V21.6875C21.5 22.4832 21.1837 23.246 20.6211 23.8086C20.0585 24.3712 19.2957 24.6875 18.5 24.6875H3.5C2.70433 24.6875 1.94149 24.3712 1.37891 23.8086C0.816298 23.246 0.5 22.4832 0.5 21.6875V6.6875C0.5 5.89185 0.816297 5.12901 1.37891 4.56641C1.94151 4.0038 2.70435 3.6875 3.5 3.6875Z"
+                                    stroke="black" />
+                            </g>
+                            <defs>
+                                <clippath id="clip0_1_221">
+                                    <rect width="26" height="26" fill="white" />
+                                </clippath>
+                            </defs>
+                        </svg>
+
                         Write Now
                     </button>
                 </div>
